@@ -265,6 +265,7 @@
   height: 190px;
   background-size: cover;
   background-position: center;
+  cursor: pointer;
 }
 
 .our-project-main .main-content .video-and-img .img-box .text-box {
@@ -285,6 +286,12 @@
   -webkit-box-orient: vertical;
   overflow: hidden;
   color: #000000;
+}
+
+.our-project-main .main-content .video-and-img .magnified-view img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .our-project-main .main-content .content .content-box {
@@ -477,6 +484,10 @@
 
 .story-strip-main .story-strip .year {
   margin-top: -14px;
+}
+
+.modal-dialog {
+  max-width: 700px !important;
 }
 
 @media (max-width: 576px) {
