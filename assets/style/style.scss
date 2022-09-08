@@ -166,15 +166,14 @@ $Font-Family: 'Mont Blanc-Trial';
 
         .sm-h {
             z-index: 1;
-            text-shadow: 0 0 4px white;
-            color: transparent;
+            color: $white;
             transition: all .2s ease-in;
             position: relative;
 
             &::before {
                 content: " ";
                 position: absolute;
-                width: 0%;
+                width: 20%;
                 height: 2px;
                 background-color: $white;
                 top: 40px;
