@@ -93,10 +93,13 @@
 
 #NavBarAndHeroMain .nav-menu-strip {
   position: fixed;
+  top: 0;
   right: 0;
   left: 0;
   padding: 10px;
-  max-width: 354px;
+  max-width: 358px;
+  background-color: #ffffff;
+  z-index: 2;
 }
 
 #NavBarAndHeroMain nav ul {
@@ -210,7 +213,7 @@
 }
 
 .our-project-main .our-project-hero {
-  height: 100vh;
+  height: 40vh;
   width: 100%;
   background-image: url(../images/our-project-hero.jpg);
   background-size: cover;
@@ -252,6 +255,8 @@
 .our-project-main .main-content .video-and-img video {
   height: 476px;
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   margin-bottom: 12px;
 }
 
@@ -472,5 +477,59 @@
 
 .story-strip-main .story-strip .year {
   margin-top: -14px;
+}
+
+@media (max-width: 576px) {
+  #NavBarAndHeroMain .nav-menu-strip {
+    left: -400px;
+  }
+  #NavBarAndHeroMain .project-img-box {
+    width: 96%;
+  }
+  .header-logo-close {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: fixed;
+    width: 82%;
+    top: 43px;
+  }
+  .header-logo-close .img-box {
+    width: 140px;
+    height: auto;
+  }
+  .our-project-main .main-content {
+    margin-right: 5%;
+  }
+  .our-project-main .main-content tbody tr td .img-box {
+    height: 60px;
+  }
+  .our-project-main .main-content tbody tr td .img-box .text-box {
+    height: 34px;
+  }
+  .our-project-main .main-content .video-and-img .middle {
+    margin: 70px 0;
+  }
+  .our-project-main .main-content .video-and-img .img-box .text-box .very-sm-txt {
+    font-size: 15px;
+  }
+  .very-big-sec-h {
+    font-size: 64px;
+  }
+  .very-sm-txt {
+    font-size: 6px;
+  }
+  .about-grid-sec .img-box {
+    margin-top: 20px;
+  }
+  .our-team-grid .img-box {
+    margin-bottom: 70px;
+  }
+  .our-team-grid .very-sm-txt {
+    font-size: 12px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

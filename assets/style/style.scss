@@ -60,12 +60,15 @@ $Font-Family: 'Mont Blanc-Trial';
 .color-dull {
     color: #777676;
 }
-.link{
+
+.link {
     text-decoration: none;
-    &:hover{
+
+    &:hover {
         text-decoration: none;
     }
 }
+
 .btn-main {
     background-color: $blkShade;
     color: $white;
@@ -108,10 +111,13 @@ $Font-Family: 'Mont Blanc-Trial';
 
     .nav-menu-strip {
         position: fixed;
+        top: 0;
         right: 0;
         left: 0;
         padding: 10px;
-        max-width: 354px;
+        max-width: 358px;
+        background-color: #ffffff;
+        z-index: 2;
     }
 
     nav {
@@ -231,7 +237,7 @@ $Font-Family: 'Mont Blanc-Trial';
     background-color: $gray-very-light;
 
     .our-project-hero {
-        height: 100vh;
+        height: 40vh;
         width: 100%;
         background-image: url(../images/our-project-hero.jpg);
         background-size: cover;
@@ -272,6 +278,7 @@ $Font-Family: 'Mont Blanc-Trial';
             video {
                 height: 476px;
                 width: 100%;
+                object-fit: cover;
                 margin-bottom: 12px;
             }
 
@@ -503,16 +510,111 @@ $Font-Family: 'Mont Blanc-Trial';
     }
 }
 
-.story-strip-main{
+.story-strip-main {
     padding: 10px 30px;
-    .story-strip{
+
+    .story-strip {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
         border-bottom: 1px solid $gray;
         padding: 24px 0;
-        .year{
+
+        .year {
             margin-top: -14px;
         }
     }
 }
+
+
+
+@media (max-width: 576px) { 
+    #NavBarAndHeroMain {
+        .nav-menu-strip {
+            left: -400px;
+        }
+        .project-img-box{
+            width: 96%;
+        }
+    }
+    .header-logo-close{
+        display: flex;
+        justify-content: space-between;
+        position: fixed;
+    width: 82%;
+    top: 43px;
+        .img-box{
+            width: 140px;
+            height: auto;
+        }
+    }
+    .our-project-main{
+        .main-content{
+            margin-right: 5%;
+        }
+    } 
+    .our-project-main{
+        .main-content{
+            tbody{
+                tr{
+                    td{
+                        .img-box{
+                            height: 60px;
+                            .text-box{
+                                height: 34px;
+                            }
+                        }
+                    } 
+                } 
+            } 
+            .video-and-img{
+                .middle{
+                    margin: 70px 0;
+                }
+                .img-box {
+                    .text-box{
+                        .very-sm-txt{
+                            font-size: 15px;
+                        }
+                    } 
+                }
+            }
+
+        } 
+    } 
+    .very-big-sec-h{
+        font-size: 64px;
+    }
+    .very-sm-txt{
+        font-size: 6px;
+    }
+
+    .about-grid-sec {
+        .img-box{
+            margin-top: 20px;
+        }   
+    }
+    .our-team-grid{
+       
+        .img-box{
+            margin-bottom: 70px;
+        }
+        .very-sm-txt{
+            font-size: 12px;
+        }
+    }
+
+ }
+
+
+@media (max-width: 767px) { 
+
+
+ }
+
+
+@media (max-width: 992px) { 
+
+
+ }
+
