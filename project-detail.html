@@ -25,56 +25,63 @@
             <div class="row height-main">
                 <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3
                         px-3">
-                    <div class="nav-menu-strip">
-                        <div class="logo-box">
-                            <a href="index.html"><img class="img-fluid" src="assets/images/mh-logo 1.png"></a>
-                        </div>
-                        <nav>
-                            <ul>
-                                <li><a class="md-txt" href="index.html">Home</a></li>
-                                <li><a class="md-txt" href="our-projects-main.html">What We DO</a></li>
-                                <li><a class="md-txt" href="about.html">Who We Are</a></li>
-                                <li class="border-btm"><a class="md-txt" href="contact.html">Coffee With Us</a></li>
-                            </ul>
-                        </nav>
-
-                        <div class="contact-info px-3">
-                            <p class="md-txt text-uppercase bold my-4">Contact
-                                Info</p>
-                            <div class="cont-strip mb-2">
-                                <div class="left">
-                                    <p class="sm-txt"><i class="bi
-                                                bi-geo-alt-fill"></i></p>
+                        <div class="nav-menu-strip">
+                            <div id="TopStrip">
+                                <div class="logo-box">
+                                    <a href="index.html"><img class="img-fluid" src="assets/images/mh-logo 1.png"></a>
                                 </div>
-                                <div class="right">
-                                    <a href="https://www.google.com/maps?ll=23.114528,72.582917&z=16&t=m&hl=en&gl=IN&mapclient=embed"
-                                        class="sm-txt">: Motera, Chandkheda, Ahmedabad, Gujarat</a>
+                                <div id="menubtn" >
+                                    <i class="bi bi-list" id="menuIcon"></i>
                                 </div>
                             </div>
-
-                            <div class="cont-strip">
-                                <div class="left">
-                                    <p class="sm-txt"><i class="bi bi-telephone-fill"></i></p>
+                            <div id="sidenav">
+                                <nav>
+                                    <ul>
+                                        <li><a class="md-txt" href="index.html">Home</a></li>
+                                        <li><a class="md-txt" href="our-projects-main.html">Studio</a></li>
+                                        <li><a class="md-txt" href="about.html">Projects</a></li>
+                                        <li class="border-btm"><a class="md-txt" href="contact.html">Coffee With Us</a></li>
+                                    </ul>
+                                </nav>
+    
+                                <div class="contact-info px-3">
+                                    <p class="md-txt text-uppercase bold my-4">Contact
+                                        Info</p>
+                                    <div class="cont-strip mb-2">
+                                        <div class="left">
+                                            <p class="sm-txt"><i class="bi bi-geo-alt-fill"></i></p>
+                                        </div>
+                                        <div class="right">
+                                            <a href="https://www.google.com/maps?ll=23.114528,72.582917&z=16&t=m&hl=en&gl=IN&mapclient=embed"
+                                                class="sm-txt">: Motera, Chandkheda, Ahmedabad, Gujarat</a>
+                                        </div>
+                                    </div>
+    
+                                    <div class="cont-strip">
+                                        <div class="left">
+                                            <p class="sm-txt"><i class="bi bi-telephone-fill"></i></p>
+                                        </div>
+                                        <div class="right">
+                                            <a href="tel:7383566103" class="sm-txt">: +91 7383566103</a>
+                                        </div>
+                                    </div>
+    
+                                    <div class="cont-strip">
+                                        <div class="left">
+                                            <p class="sm-txt"><i class="bi bi-envelope-fill"></i></p>
+                                        </div>
+                                        <div class="right">
+                                            <a href="mailto: mhtassociate@gmail.com "
+                                                class="sm-txt">:mhtassociate@gmail.com</a>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="right">
-                                    <a href="tel:7383566103" class="sm-txt">: +91 7383566103</a>
-                                </div>
-                            </div>
-
-                            <div class="cont-strip">
-                                <div class="left">
-                                    <p class="sm-txt"><i class="bi bi-envelope-fill"></i></p>
-                                </div>
-                                <div class="right">
-                                    <a href="mailto: mhtassociate@gmail.com " class="sm-txt">:mhtassociate@gmail.com</a>
+    
+                                <div>
+                                    <p class="very-sm-txt bold my-3">© 2022. All Rights Reserved. Mhtassociate</p>
                                 </div>
                             </div>
                         </div>
-
-                        <div>
-                            <p class="very-sm-txt bold my-3">© 2022. All Rights Reserved. Mhtassociate</p>
-                        </div>
-                    </div>
                 </div>
 
                 <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-xl-9 px-0">
@@ -337,6 +344,32 @@
         </div>
     </section>
 
+
+
+    <script>
+        var SideNav = document.getElementById("sidenav");
+        var menubtn = document.getElementById("menubtn");
+        var menuIcon = document.getElementById("menuIcon");  
+        menubtn.onclick = function () {
+            console.log(SideNav.style.left)
+            if (SideNav.style.left == "0px") {
+                SideNav.style.left = "-400px";
+                menuIcon.className = "bi bi-list";            
+            }
+            else {
+                SideNav.style.left = "0px";
+                menuIcon.className = "bi bi-x-lg";
+
+            }
+        }
+    </script>
+
+    <!-- jQuery library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+        
 </body>
 
 </html>
