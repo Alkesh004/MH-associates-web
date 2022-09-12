@@ -196,7 +196,7 @@
 #NavBarAndHeroMain .project-img-box .sm-h::before {
   content: " ";
   position: absolute;
-  width: 20%;
+  width: 40px;
   height: 2px;
   background-color: #ffffff;
   top: 40px;
@@ -218,7 +218,7 @@
 }
 
 #NavBarAndHeroMain .project-img-box:hover .sm-h::before {
-  width: 100%;
+  width: 50%;
 }
 
 #NavBarAndHeroMain .contact-info {
@@ -264,7 +264,7 @@
 .our-project-main .main-content {
   background-color: #ffffff;
   padding: 20px 0;
-  margin-right: 10%;
+  margin-right: 6%;
   margin-top: -6%;
 }
 
@@ -417,6 +417,44 @@
   padding: 0 30px;
 }
 
+.our-project-main .main-content .services-icons-sec {
+  padding: 16px 24px;
+}
+
+.our-project-main .main-content .services-icons-sec .main-box {
+  width: 100%;
+  height: 250px;
+  background-color: #0000001A;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding: 12px;
+  cursor: default;
+}
+
+.our-project-main .main-content .services-icons-sec .main-box .content-h .sm-h {
+  position: relative;
+}
+
+.our-project-main .main-content .services-icons-sec .main-box .content-h .sm-h::before {
+  content: " ";
+  position: absolute;
+  width: 40px;
+  height: 2px;
+  background-color: #000000;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.our-project-main .main-content .services-icons-sec .main-box:hover .content-h .sm-h::before {
+  width: 60%;
+}
+
 .contact-form {
   padding: 0 30px;
 }
@@ -531,6 +569,42 @@
 
 .modal-dialog {
   max-width: 700px !important;
+}
+
+.projects-bottom-strip {
+  margin: 4% 0;
+}
+
+.projects-bottom-strip .img-box {
+  width: 100%;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+}
+
+.projects-bottom-strip .img-box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.projects-bottom-strip .img-box .text-box {
+  position: absolute;
+  bottom: -54px;
+  background-color: #ffffff;
+  width: 100%;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  padding: 10px;
+}
+
+.projects-bottom-strip .img-box .text-box p {
+  color: #000000;
+}
+
+.projects-bottom-strip .img-box:hover .text-box {
+  bottom: 0;
 }
 
 @media (max-width: 576px) {
