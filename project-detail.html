@@ -16,6 +16,24 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!----------- owl carousal CSS ------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+        integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css"
+        integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -25,63 +43,63 @@
             <div class="row height-main">
                 <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3
                         px-3">
-                        <div class="nav-menu-strip">
-                            <div id="TopStrip">
-                                <div class="logo-box">
-                                    <a href="index.html"><img class="img-fluid" src="assets/images/mh-logo 1.png"></a>
-                                </div>
-                                <div id="menubtn" >
-                                    <i class="bi bi-list" id="menuIcon"></i>
-                                </div>
+                    <div class="nav-menu-strip">
+                        <div id="TopStrip">
+                            <div class="logo-box">
+                                <a href="index.html"><img class="img-fluid" src="assets/images/mh-logo 1.png"></a>
                             </div>
-                            <div id="sidenav">
-                                <nav>
-                                    <ul>
-                                        <li><a class="md-txt" href="index.html">Home</a></li>
-                                        <li><a class="md-txt" href="our-projects-main.html">Studio</a></li>
-                                        <li><a class="md-txt" href="about.html">Projects</a></li>
-                                        <li class="border-btm"><a class="md-txt" href="contact.html">Coffee With Us</a></li>
-                                    </ul>
-                                </nav>
-    
-                                <div class="contact-info px-3">
-                                    <p class="md-txt text-uppercase bold my-4">Contact
-                                        Info</p>
-                                    <div class="cont-strip mb-2">
-                                        <div class="left">
-                                            <p class="sm-txt"><i class="bi bi-geo-alt-fill"></i></p>
-                                        </div>
-                                        <div class="right">
-                                            <a href="https://www.google.com/maps?ll=23.114528,72.582917&z=16&t=m&hl=en&gl=IN&mapclient=embed"
-                                                class="sm-txt">: Motera, Chandkheda, Ahmedabad, Gujarat</a>
-                                        </div>
-                                    </div>
-    
-                                    <div class="cont-strip">
-                                        <div class="left">
-                                            <p class="sm-txt"><i class="bi bi-telephone-fill"></i></p>
-                                        </div>
-                                        <div class="right">
-                                            <a href="tel:7383566103" class="sm-txt">: +91 7383566103</a>
-                                        </div>
-                                    </div>
-    
-                                    <div class="cont-strip">
-                                        <div class="left">
-                                            <p class="sm-txt"><i class="bi bi-envelope-fill"></i></p>
-                                        </div>
-                                        <div class="right">
-                                            <a href="mailto: mhtassociate@gmail.com "
-                                                class="sm-txt">:mhtassociate@gmail.com</a>
-                                        </div>
-                                    </div>
-                                </div>
-    
-                                <div>
-                                    <p class="very-sm-txt bold my-3">© 2022. All Rights Reserved. Mhtassociate</p>
-                                </div>
+                            <div id="menubtn">
+                                <i class="bi bi-list" id="menuIcon"></i>
                             </div>
                         </div>
+                        <div id="sidenav">
+                            <nav>
+                                <ul>
+                                    <li><a class="md-txt" href="index.html">Home</a></li>
+                                    <li><a class="md-txt" href="about.html">Studio</a></li>
+                                    <li><a class="md-txt" href="our-projects-main.html">Projects</a></li>
+                                    <li class="border-btm"><a class="md-txt" href="contact.html">Coffee With Us</a></li>
+                                </ul>
+                            </nav>
+
+                            <div class="contact-info px-3">
+                                <p class="md-txt text-uppercase bold my-4">Contact
+                                    Info</p>
+                                <div class="cont-strip mb-2">
+                                    <div class="left">
+                                        <p class="sm-txt"><i class="bi bi-geo-alt-fill"></i></p>
+                                    </div>
+                                    <div class="right">
+                                        <a href="https://www.google.com/maps?ll=23.114528,72.582917&z=16&t=m&hl=en&gl=IN&mapclient=embed"
+                                            class="sm-txt">: Motera, Chandkheda, Ahmedabad, Gujarat</a>
+                                    </div>
+                                </div>
+
+                                <div class="cont-strip">
+                                    <div class="left">
+                                        <p class="sm-txt"><i class="bi bi-telephone-fill"></i></p>
+                                    </div>
+                                    <div class="right">
+                                        <a href="tel:7383566103" class="sm-txt">: +91 7383566103</a>
+                                    </div>
+                                </div>
+
+                                <div class="cont-strip">
+                                    <div class="left">
+                                        <p class="sm-txt"><i class="bi bi-envelope-fill"></i></p>
+                                    </div>
+                                    <div class="right">
+                                        <a href="mailto: mhtassociate@gmail.com "
+                                            class="sm-txt">:mhtassociate@gmail.com</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div>
+                                <p class="very-sm-txt bold my-3">© 2022. All Rights Reserved. Mhtassociate</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-xl-9 px-0">
@@ -107,86 +125,61 @@
                                     <source src="assets/videos/project-dummy-video.mp4">
                                 </video>
 
-                                <div class="row no-gutters">
-                                    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                                        <div class="img-box" data-toggle="modal" data-target="#exampleModalone"
-                                            style="background-image: url(assets/images/project-detail-img-1.jpg);">
-                                        </div>
-                                    </div>
-
-                                    <div class="modal fade" id="exampleModalone" tabindex="-1" role="dialog"
-                                        aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-                                        <div class="modal-dialog" role="document">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h5 class="modal-title" id="exampleModalLongTitle">Magnified view
-                                                    </h5>
-                                                    <button type="button" class="close" data-dismiss="modal"
-                                                        aria-label="Close">
-                                                        <span aria-hidden="true">&times;</span>
-                                                    </button>
-                                                </div>
-                                                <div class="modal-body magnified-view">
-                                                    <img class="img-fluid" src="assets/images/project-detail-img-1.jpg">
-                                                </div>
+                                <div class="owl-carousel owl-theme img-zoom-caro">
+                                    <div class="item">
+                                        <a href="assets/images/project-img-1.jpg" data-fancybox="images">
+                                            <div class="img-box">
+                                                <img class="img-fluid" src="assets/images/project-img-1.jpg">
                                             </div>
-                                        </div>
+                                        </a>
                                     </div>
 
-                                    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 px-0 px-lg-3 my-lg-0 my-3">
-                                        <div class="img-box" data-toggle="modal" data-target="#exampleModaltwo"
-                                            style="background-image: url(assets/images/project-img-2.jpg);"></div>
-                                    </div>
-
-                                    <div class="modal fade" id="exampleModaltwo" tabindex="-1" role="dialog"
-                                        aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-                                        <div class="modal-dialog" role="document">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h5 class="modal-title" id="exampleModalLongTitle">Magnified view
-                                                    </h5>
-                                                    <button type="button" class="close" data-dismiss="modal"
-                                                        aria-label="Close">
-                                                        <span aria-hidden="true">&times;</span>
-                                                    </button>
-                                                </div>
-                                                <div class="modal-body magnified-view">
-                                                    <img class="img-fluid" src="assets/images/project-img-2.jpg">
-                                                </div>
+                                    <div class="item">
+                                        <a href="assets/images/project-img-2.jpg" data-fancybox="images">
+                                            <div class="img-box">
+                                                <img class="img-fluid" src="assets/images/project-img-2.jpg">
                                             </div>
-                                        </div>
+                                        </a>
                                     </div>
 
-                                    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                                        <div class="img-box" data-toggle="modal" data-target="#exampleModalthree"
-                                            style="background-image: url(assets/images/project-img-4.jpg);"></div>
-                                    </div>
-
-                                    <div class="modal fade" id="exampleModalthree" tabindex="-1" role="dialog"
-                                        aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-                                        <div class="modal-dialog" role="document">
-                                            <div class="modal-content">
-                                                <div class="modal-header">
-                                                    <h5 class="modal-title" id="exampleModalLongTitle">Magnified view
-                                                    </h5>
-                                                    <button type="button" class="close" data-dismiss="modal"
-                                                        aria-label="Close">
-                                                        <span aria-hidden="true">&times;</span>
-                                                    </button>
-                                                </div>
-                                                <div class="modal-body magnified-view">
-                                                    <img class="img-fluid" src="assets/images/project-img-4.jpg">
-                                                </div>
+                                    <div class="item">
+                                        <a href="assets/images/project-img-3.jpg" data-fancybox="images">
+                                            <div class="img-box">
+                                                <img class="img-fluid" src="assets/images/project-img-3.jpg">
                                             </div>
-                                        </div>
+                                        </a>
                                     </div>
 
+                                    <div class="item">
+                                        <a href="assets/images/project-img-4.jpg" data-fancybox="images">
+                                            <div class="img-box">
+                                                <img class="img-fluid" src="assets/images/project-img-4.jpg">
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="item">
+                                        <a href="assets/images/project-img-5.jpg" data-fancybox="images">
+                                            <div class="img-box">
+                                                <img class="img-fluid" src="assets/images/project-img-5.jpg">
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="item">
+                                        <a href="assets/images/project-img-6.jpg" data-fancybox="images">
+                                            <div class="img-box">
+                                                <img class="img-fluid" src="assets/images/project-img-6.jpg">
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
 
                             </div>
 
                             <div class="content p-4">
                                 <div class="row">
+
                                     <div class="col-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
                                         <p class="sm-txt text-justify">
                                             Nunc ac tellus dui. Cras eu consequat eros, at gravida magna. Phasellus
@@ -197,6 +190,7 @@
                                             efficitur sit amet neque et laoreet. Etiam sed bibendum ipsum, id
                                             pellentesque diam. Nunc vitae pharetra mi.
                                         </p>
+
                                         <p class="sm-txt text-justify">
                                             All right me luvver ipsum dolor sit amet inchew innit ohm oo done it. Oozee
                                             smorning gashead bemminser irure duis zider reprehenderit luvver sed ut
@@ -232,93 +226,54 @@
                                     Curabitur lorem enim, maximus non nulla sed.</p>
                             </div>
                             <div class="video-and-img px-4">
-                                <div class="row no-gutters">
-                                    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                                        <div class="img-box" data-toggle="modal" data-target="#projectModalone"
-                                            style="background-image: url(assets/images/project-detail-img-1.jpg);">
-                                            <div class="text-box">
-                                                <p class="very-sm-txt bold mb-0">Trinity River Audubon Centre</p>
-                                                <p class="very-sm-txt mb-0">Hoses / Apartments</p>
+                                <div class="owl-carousel owl-theme img-zoom-caro">
+                                    <div class="item">
+                                        <a href="assets/images/project-img-1.jpg" data-fancybox="images">
+                                            <div class="img-box">
+                                                <img class="img-fluid" src="assets/images/project-img-1.jpg">
                                             </div>
-                                        </div>
-
-                                        <div class="modal fade" id="projectModalone" tabindex="-1" role="dialog"
-                                            aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-                                            <div class="modal-dialog" role="document">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <h5 class="modal-title" id="exampleModalLongTitle">Magnified
-                                                            view</h5>
-                                                        <button type="button" class="close" data-dismiss="modal"
-                                                            aria-label="Close">
-                                                            <span aria-hidden="true">&times;</span>
-                                                        </button>
-                                                    </div>
-                                                    <div class="modal-body magnified-view">
-                                                        <img class="img-fluid" src="assets/images/project-detail-img-1.jpg">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        </a>
                                     </div>
 
-                                    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 px-0 px-lg-3 middle">
-                                        <div class="img-box" data-toggle="modal" data-target="#projectModaltwo"
-                                            style="background-image: url(assets/images/project-img-2.jpg);">
-                                            <div class="text-box">
-                                                <p class="very-sm-txt bold mb-0">Trinity River Audubon Centre</p>
-                                                <p class="very-sm-txt mb-0">Hoses / Apartments</p>
+                                    <div class="item">
+                                        <a href="assets/images/project-img-2.jpg" data-fancybox="images">
+                                            <div class="img-box">
+                                                <img class="img-fluid" src="assets/images/project-img-2.jpg">
                                             </div>
-                                        </div>
-                                        <div class="modal fade" id="projectModaltwo" tabindex="-1" role="dialog"
-                                            aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-                                            <div class="modal-dialog" role="document">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <h5 class="modal-title" id="exampleModalLongTitle">Magnified
-                                                            view</h5>
-                                                        <button type="button" class="close" data-dismiss="modal"
-                                                            aria-label="Close">
-                                                            <span aria-hidden="true">&times;</span>
-                                                        </button>
-                                                    </div>
-                                                    <div class="modal-body magnified-view">
-                                                        <img class="img-fluid" src="assets/images/project-img-2.jpg">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        </a>
                                     </div>
 
-                                    <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
-                                        <div class="img-box" data-toggle="modal" data-target="#projectModathree"
-                                            style="background-image: url(assets/images/project-img-4.jpg);">
-                                            <div class="text-box">
-                                                <p class="very-sm-txt bold mb-0">Trinity River Audubon Centre</p>
-                                                <p class="very-sm-txt mb-0">Hoses / Apartments</p>
+                                    <div class="item">
+                                        <a href="assets/images/project-img-3.jpg" data-fancybox="images">
+                                            <div class="img-box">
+                                                <img class="img-fluid" src="assets/images/project-img-3.jpg">
                                             </div>
-                                        </div>
-
-                                        <div class="modal fade" id="projectModathree" tabindex="-1" role="dialog"
-                                            aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-                                            <div class="modal-dialog" role="document">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <h5 class="modal-title" id="exampleModalLongTitle">Magnified
-                                                            view</h5>
-                                                        <button type="button" class="close" data-dismiss="modal"
-                                                            aria-label="Close">
-                                                            <span aria-hidden="true">&times;</span>
-                                                        </button>
-                                                    </div>
-                                                    <div class="modal-body magnified-view">
-                                                        <img class="img-fluid" src="assets/images/project-img-4.jpg">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        </a>
                                     </div>
 
+                                    <div class="item">
+                                        <a href="assets/images/project-img-4.jpg" data-fancybox="images">
+                                            <div class="img-box">
+                                                <img class="img-fluid" src="assets/images/project-img-4.jpg">
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="item">
+                                        <a href="assets/images/project-img-5.jpg" data-fancybox="images">
+                                            <div class="img-box">
+                                                <img class="img-fluid" src="assets/images/project-img-5.jpg">
+                                            </div>
+                                        </a>
+                                    </div>
+
+                                    <div class="item">
+                                        <a href="assets/images/project-img-6.jpg" data-fancybox="images">
+                                            <div class="img-box">
+                                                <img class="img-fluid" src="assets/images/project-img-6.jpg">
+                                            </div>
+                                        </a>
+                                    </div>
                                 </div>
                             </div>
 
@@ -330,7 +285,7 @@
                                 <div class="px-4 d-flex justify-content-between flex-wrap">
                                     <p class="sm-h bold">Let’s Discuss Your Project </p>
                                     <a href="contact.html"><button class="btn-main">Project Desigm<i
-                                            class="bi bi-arrow-right ml-1"></i></button></a>
+                                                class="bi bi-arrow-right ml-1"></i></button></a>
                                 </div>
                             </div>
                         </div>
@@ -349,17 +304,16 @@
     <script>
         var SideNav = document.getElementById("sidenav");
         var menubtn = document.getElementById("menubtn");
-        var menuIcon = document.getElementById("menuIcon");  
+        var menuIcon = document.getElementById("menuIcon");
         menubtn.onclick = function () {
             console.log(SideNav.style.left)
             if (SideNav.style.left == "0px") {
                 SideNav.style.left = "-400px";
-                menuIcon.className = "bi bi-list";            
+                menuIcon.className = "bi bi-list";
             }
             else {
                 SideNav.style.left = "0px";
                 menuIcon.className = "bi bi-x-lg";
-
             }
         }
     </script>
@@ -369,7 +323,62 @@
         integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-        
+
+    <!-- owl-script -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+        integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"
+        integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script>
+        $('.img-zoom-caro').owlCarousel({
+            loop: true,
+            autoplay: true,
+            margin: 10,
+            dots: false,
+            responsiveClass: true,
+            nav: false,
+            stagePadding: 50,
+            slideTransition: 'linear',
+            autoplayTimeout: 6000,
+            autoplaySpeed: 6000,
+            autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 1,
+                },
+                600: {
+                    items: 3,
+                },
+                1000: {
+                    items: 3,
+                }
+            }
+        })
+    </script>
+
+    <script>
+
+        $('[data-fancybox="images"]').fancybox({
+            thumbs: {
+                autoStart: true
+            },
+            buttons: [
+                'zoom',
+                'close'
+            ]
+        });
+    </script>
+
+
 </body>
 
 </html>

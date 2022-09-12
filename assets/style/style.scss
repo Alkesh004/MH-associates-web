@@ -302,6 +302,40 @@ $Font-Family: 'Mont Blanc-Trial';
 
 
         .video-and-img {
+
+            .img-zoom-caro {
+                .img-box {
+                    width: 100%;
+                    height: 190px;
+                    overflow: hidden;
+                    img{
+                        object-fit: cover;
+                        width: 100%;
+                        height: 100%;
+                    }
+                    .text-box {
+                        background-color: $white;
+                        overflow: hidden;
+                        width: 100%;
+                        height: 50px;
+                        position: absolute;
+                        bottom: -51px;
+                        padding: 4px;
+                        transition: .2s ease-in;
+    
+                        .very-sm-txt {
+                            -webkit-line-clamp: 2;
+                            display: -webkit-box;
+                            -webkit-box-orient: vertical;
+                            overflow: hidden;
+                            color: $black;
+    
+                        }
+    
+                    }
+                }
+            }
+
             video {
                 height: 476px;
                 width: 100%;
@@ -310,34 +344,7 @@ $Font-Family: 'Mont Blanc-Trial';
             }
 
 
-            .img-box {
-                width: 100%;
-                height: 190px;
-                background-size: cover;
-                background-position: center;
-                cursor: pointer;
-
-                .text-box {
-                    background-color: $white;
-                    overflow: hidden;
-                    width: 100%;
-                    height: 50px;
-                    position: absolute;
-                    bottom: -51px;
-                    padding: 4px;
-                    transition: .2s ease-in;
-
-                    .very-sm-txt {
-                        -webkit-line-clamp: 2;
-                        display: -webkit-box;
-                        -webkit-box-orient: vertical;
-                        overflow: hidden;
-                        color: $black;
-
-                    }
-
-                }
-            }
+          
 
             .magnified-view {
                 img {
@@ -533,11 +540,14 @@ $Font-Family: 'Mont Blanc-Trial';
 
 .our-team-grid {
     .img-box {
-        height: 200px;
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
+        width: 100%;
+        height: 300px;
         position: relative;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     }
 
     .text-box {

@@ -285,23 +285,20 @@
   margin: 0 30px;
 }
 
-.our-project-main .main-content .video-and-img video {
-  height: 476px;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  margin-bottom: 12px;
-}
-
-.our-project-main .main-content .video-and-img .img-box {
+.our-project-main .main-content .video-and-img .img-zoom-caro .img-box {
   width: 100%;
   height: 190px;
-  background-size: cover;
-  background-position: center;
-  cursor: pointer;
+  overflow: hidden;
 }
 
-.our-project-main .main-content .video-and-img .img-box .text-box {
+.our-project-main .main-content .video-and-img .img-zoom-caro .img-box img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.our-project-main .main-content .video-and-img .img-zoom-caro .img-box .text-box {
   background-color: #ffffff;
   overflow: hidden;
   width: 100%;
@@ -313,12 +310,20 @@
   transition: .2s ease-in;
 }
 
-.our-project-main .main-content .video-and-img .img-box .text-box .very-sm-txt {
+.our-project-main .main-content .video-and-img .img-zoom-caro .img-box .text-box .very-sm-txt {
   -webkit-line-clamp: 2;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   overflow: hidden;
   color: #000000;
+}
+
+.our-project-main .main-content .video-and-img video {
+  height: 476px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 12px;
 }
 
 .our-project-main .main-content .video-and-img .magnified-view img {
@@ -485,11 +490,16 @@
 }
 
 .our-team-grid .img-box {
-  height: 200px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  width: 100%;
+  height: 300px;
   position: relative;
+}
+
+.our-team-grid .img-box img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .our-team-grid .text-box {
