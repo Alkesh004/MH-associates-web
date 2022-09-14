@@ -608,6 +608,9 @@
 }
 
 @media (max-width: 576px) {
+  #NavBarAndHeroMain .height-main {
+    margin-top: -36px;
+  }
   #NavBarAndHeroMain .nav-menu-strip {
     bottom: auto;
     padding: 10px 16px;
