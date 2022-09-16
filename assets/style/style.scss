@@ -40,6 +40,7 @@ $Font-Family: 'Mont Blanc-Trial';
 
 .very-sm-txt {
     font-size: 14px;
+    text-transform: capitalize;
 }
 
 .heading {
@@ -278,6 +279,16 @@ $Font-Family: 'Mont Blanc-Trial';
         }
     }
 
+    .project-box {
+        .img-box {
+            .text-box {
+                .very-sm-txt {
+                    text-transform: capitalize;
+                }
+            }
+        }
+    }
+
     .main-content {
         background-color: $white;
         padding: 20px 0;
@@ -302,6 +313,10 @@ $Font-Family: 'Mont Blanc-Trial';
 
 
         .video-and-img {
+            a {
+                text-decoration: none;
+                color: #000000;
+            }
 
             .img-zoom-caro {
                 .img-box {
@@ -331,7 +346,6 @@ $Font-Family: 'Mont Blanc-Trial';
                             -webkit-box-orient: vertical;
                             overflow: hidden;
                             color: $black;
-
                         }
 
                     }
@@ -663,7 +677,7 @@ $Font-Family: 'Mont Blanc-Trial';
 @media (max-width: 576px) {
     #NavBarAndHeroMain {
         .height-main {
-          margin-top: -36px;
+            margin-top: -36px;
         }
 
         .nav-menu-strip {

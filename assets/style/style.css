@@ -26,6 +26,7 @@
 
 .very-sm-txt {
   font-size: 14px;
+  text-transform: capitalize;
 }
 
 .heading {
@@ -261,6 +262,10 @@
   font-weight: 700;
 }
 
+.our-project-main .project-box .img-box .text-box .very-sm-txt {
+  text-transform: capitalize;
+}
+
 .our-project-main .main-content {
   background-color: #ffffff;
   padding: 20px 0;
@@ -283,6 +288,11 @@
   width: -moz-fit-content;
   width: fit-content;
   margin: 0 30px;
+}
+
+.our-project-main .main-content .video-and-img a {
+  text-decoration: none;
+  color: #000000;
 }
 
 .our-project-main .main-content .video-and-img .img-zoom-caro .img-box {
